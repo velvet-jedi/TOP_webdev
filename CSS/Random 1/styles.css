@@ -1,0 +1,28 @@
+code{
+    background-color: rgba(55,65,81,.4);
+    color: #f472b6;
+    border: 12px ridge black;
+    
+}
+
+html{
+    background: thistle scroll 0% 0% / auto padding-box border-box none red;
+    background-image: url('https://33.media.tumblr.com/7e976dd0490b67de9ff191a9d929c7df/tumblr_nn3ens52cR1qza1qzo1_540.gif');
+    background-repeat: repeat;
+    overflow: scroll;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    text-shadow: #f472b6;
+    height: 20em;
+    background-color: blanchedalmond;
+    width: 20em;
+    box-shadow: 10px 10px 10px #925229;
+    border-radius: 50%;
+
+}
