@@ -1,0 +1,14 @@
+input{
+    border-radius: 6px;
+    margin-bottom: 12px;
+    padding: 3px;
+    border: 2px blue solid;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+  }

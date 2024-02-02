@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish and validated form bro</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <form action="#" method="get">
+        <div>
+          <label for="user_email">*Email:</label>
+          <input type="email" id="user_email" name="user_email" required>
+        </div>
+        <br>
+      
+        <div>
+          <label for="user_password">*Password:</label>
+          <input minlength="8" maxlength="16" type="password" id="user_password" name="user_password" required>
+        </div>
+    
+        <div>
+            <label for="user_age">*Age</label>
+            <input type="number" id="user_age" min="15" placeholder="Enter your age" max="45" required name="user_age">
+        </div>
+
+        <div>
+            <label for="contact">*Mobile</label>
+            <input type="text" required pattern="^\d{10}$" name="contact" id="contact" placeholder="5623413454">
+        </div>
+
+        <div>
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website">
+        </div>
+      
+        <button type="submit">Login</button>
+      </form>
+    
+</body>
+</html>
