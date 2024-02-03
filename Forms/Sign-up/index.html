@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    
+    <title>Sign-up</title>
+
+</head>
+<body>
+
+    <div class="outerflex">
+
+        <div class="wrapper">
+            <div class="overlay">
+                <img width="170" height="170" src="https://www.pngplay.com/wp-content/uploads/9/Tea-Bag-Transparent-Background.png">
+                
+                    <p style="font-size: 5vw ;" id="custom-font">BHIMTAL</p>
+                
+            </div>
+            <img class="background" src="https://images.unsplash.com/photo-1483197452165-7abc4b248905?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="mountain">
+        </div>
+        
+        <div class="rightside">
+            <div class="text">
+                <p>Descending down and relaxing in a steamer.
+                <em>Strolling on the Mallroad and eating cone-ice-cream, 
+                    Nainital is so gorgeous, the land of my dream.
+                Agrt - 'a splendid landscapes.</em></p>
+                    
+                <p>We can't wait for you to arrive!</p>
+                    
+            </div>
+            <form action="https://httpbin.org/anything" method="post">
+                <h3>Let's do this!</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" required/>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">PHONE</label>
+                        <input type="text" pattern="^\d{10}$" id="phone" name="phone" required/>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pass">PASSWORD</label>
+                        <input minlength="8" class="error" type="password" id="pass" name="pass" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-pass">CONFIRM PASSWORD</label>
+                        <input class="error" type="password" id="confirm-pass" name="confirm-pass" required/>
+                        <span id="alert"></span>
+                    </div>
+                </div>
+            
+                <div class="create">
+                    <button id="create" type="submit">Create Account</button>
+                </div>
+            </form>
+            
+            <p class="login">Already have an account? <a href='#' id="login">Log in</a></p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
